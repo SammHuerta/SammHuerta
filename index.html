@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acerca de mí - Samm Huerta</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"/>
+  <link rel="stylesheet" href="estilos.css" />
+	
+  <style>
+    body 
+	   .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			  gap: 1rem; margin-top: 1rem;}
+
+    .skill { background-color: #F3E8DB; border-left: 5px solid #8B6F47; padding: 1rem;
+			 border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); opacity: 0;
+			 transform: translateY(20px); animation: fadeInUp 0.6s ease forwards;}
+
+    .skill:nth-child(2) { animation-delay: 0.1s; }
+    .skill:nth-child(3) { animation-delay: 0.2s; }
+    .skill:nth-child(4) { animation-delay: 0.3s; }
+    .skill:nth-child(5) { animation-delay: 0.4s; }
+    .skill:nth-child(6) { animation-delay: 0.5s; }
+    .skill:nth-child(7) { animation-delay: 0.6s; }
+    .skill:nth-child(8) { animation-delay: 0.7s; }
+
+    .skill h4 { margin-top: 0; margin-bottom: 0.5rem; color: #8B6F47;}
+
+    .skill ul { margin: 0; padding-left: 1rem;}
+
+    .skill ul li { margin-bottom: 0.25rem; list-style: disc;}
+
+    @keyframes fadeInUp { to { opacity: 1; transform: translateY(0);} }
+  </style>
+	
+  <link rel="shortcut icon" href="ima/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="ima/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <nav>
+    <h1>Samm Huerta</h1>
+    <div class="dropdown">
+      <button
+        class="dropdown-toggle"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Menú
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="port.html">Portafolio</a></li>
+        <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+ <header>
+    <h2>¡Hola! Soy Samantha ✨</h2>
+    <p>Diseñadora de la Comunicación Gráfica con enfoque en medios digitales e interés por la ilustración.</p>
+  </header>
+
+  <div class="container">
+    <div class="profile" id="perfil">
+      <img src="ima/samm.jpeg" alt="Foto de Samantha">
+      <div class="profile-text">
+		<h3>¡Hola! Me presento</h3>
+        <p>Mi nombre es Samantha Huerta Chávez, tengo 23 años y soy de México. Actualmente estudio la carrera de <b><i>Diseño de la Comunicación Gráfica en la Universidad Autónoma Metropolitana, unidad Azcapotzalco.</i></b> Principalmente me apasionan los medios digitales y un poco de ilustración. Toda mi vida me considere una persona creativa, en busca de aprender cosas nuevas (todas las que me fueran posibles), siempre me gusto crear, jugar con las cosas, experimentar, y siempre tuve mucha curiosidad de la vida. Al paso del tiempo supe que esto era a lo que me quería dedicar. <i>Cada proyecto que realizo lo hago con mucha dedicación y cariño.</i></p>
+      </div>
+    </div>
+
+    <h3>Habilidades</h3>
+    <div class="skills">
+      <div class="skill">
+        <h4>Photoshop</h4>
+        <ul>
+			<li>Retoque básico</li>
+			<li>Composición gráfica</li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h4>Illustrator</h4>
+        <ul>
+			<li>Ilustración</li>
+			<li>Diseño de carteles</li>
+			<li>Folletos y flyers</li>
+			<li>Diseño publicitario</li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h4>InDesign</h4>
+        <ul>
+			<li>Programas de mano</li>
+			<li>Boletos, entradas VIP y postales</li>
+			<li>Brochures</li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h4>Premiere Pro</h4>
+        <ul>
+			<li>Edición de video básica</li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h4>Audition</h4>
+        <ul>
+			<li>Sonorización de proyectos</li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h4>Stop Motion</h4>
+        <ul>
+			<li>Animación básica con fotografías</li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h4>Fotografía</h4>
+        <ul>
+			<li>Fotografía básica</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="mt-5">Un adelanto de mi trabajo</h3>
+    <div class="ratio ratio-16x9 mb-4" id="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/5FGS5OrMCDM?si=j6831hXeakwPQyfZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
